@@ -22,10 +22,25 @@ public class Main {
      */
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter String to Blow Up:" );
-        blowUp(sc.nextLine());
-        System.out.println("Enter String to Find Run:" );
-        maxRun(sc.nextLine());
+        
+//        System.out.println("Enter String to Blow Up:" );
+//        blowUp(sc.nextLine());
+//        System.out.println("Enter String to Find Run:" );
+//        maxRun(sc.nextLine());
+        
+//        CharGrid charGrid = new CharGrid();
+//        int area = charGrid.charArea('a');
+//        System.out.println("Area is: " + area);
+        
+//        TetrisGridSample tetrisGrid = new TetrisGridSample();
+//        tetrisGrid.display();
+//        tetrisGrid.clearRows();
+//        tetrisGrid.display();
+        
+        TetrisGrid tetrisGrid = new TetrisGrid();
+        tetrisGrid.displayGrid();
+        tetrisGrid.clearRows();
+        tetrisGrid.displayGrid();
     }
 
     private static void blowUp (String s){
